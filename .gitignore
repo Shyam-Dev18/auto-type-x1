@@ -43,3 +43,5 @@ signing.properties
 # Profiling / debugging
 *.hprof
 *.log
+
+app/release/

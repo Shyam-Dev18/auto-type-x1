@@ -1,0 +1,45 @@
+# Android Studio / IntelliJ
+*.iml
+.idea/
+
+# Kotlin daemon sessions
+.kotlin/
+
+# Gradle
+.gradle/
+**/build/
+
+# Local configuration — never commit this
+local.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Native build artifacts
+.externalNativeBuild/
+.cxx/
+
+# Android Studio captures
+captures/
+
+# Signing keys / credentials — NEVER commit these
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# Environment / secret files
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Profiling / debugging
+*.hprof
+*.log

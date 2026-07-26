@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AutoType X1</string>
+    <string name="app_description">Physical Bluetooth keyboard emulator with human-like typing profiles.</string>
+    <string name="dev_name">shyam</string>
+</resources>

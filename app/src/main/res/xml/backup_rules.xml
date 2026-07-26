@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AutoType X1 — Full Backup Rules (API 31 and below)
+
+  Decisions:
+  - Scripts (Room DB):      BACKED UP — user-created content, valuable to preserve
+  - App settings:           BACKED UP — typing profiles, theme preferences
+  - Known Bluetooth devices: EXCLUDED — MAC addresses are device-specific;
+                              restoring them to a different phone is useless and
+                              could cause confusing stale connections
+-->
+<full-backup-content>
+    <!-- Exclude DataStore known-devices file (device-specific Bluetooth MACs) -->
+    <exclude domain="file" path="datastore/known_devices.preferences_pb" />
+</full-backup-content>

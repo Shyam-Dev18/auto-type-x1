@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AutoType X1 — Data Extraction Rules (API 31+)
+
+  Decisions:
+  - Scripts (Room DB):       INCLUDED in cloud backup and device transfer
+  - App settings:            INCLUDED in cloud backup and device transfer
+  - Known Bluetooth devices: EXCLUDED from both — MAC addresses are hardware-specific
+                              and meaningless/misleading on a new device
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude device-specific Bluetooth pairing history -->
+        <exclude domain="file" path="datastore/known_devices.preferences_pb" />
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Do not transfer Bluetooth device list — pairing must be redone on new hardware -->
+        <exclude domain="file" path="datastore/known_devices.preferences_pb" />
+    </device-transfer>
+</data-extraction-rules>

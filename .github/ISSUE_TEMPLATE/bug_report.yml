@@ -1,0 +1,116 @@
+name: Bug Report
+description: Report unexpected behavior or crashes in AutoType X1
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Please fill in as much detail as possible.
+        Remove any private information (Bluetooth MAC addresses, personal scripts) before submitting.
+
+  - type: input
+    id: version
+    attributes:
+      label: AutoType X1 Version
+      description: Found in Settings → About
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: android_version
+    attributes:
+      label: Android Version
+      description: Settings → About phone → Android version
+      placeholder: "e.g. Android 14 (API 34)"
+    validations:
+      required: true
+
+  - type: input
+    id: device_model
+    attributes:
+      label: Phone / Device Model
+      placeholder: "e.g. Samsung Galaxy S23, Pixel 8"
+    validations:
+      required: true
+
+  - type: input
+    id: host_os
+    attributes:
+      label: Target Host OS (if Bluetooth-related)
+      description: The computer or device you are connecting to
+      placeholder: "e.g. Windows 11, Ubuntu 24.04, macOS Sonoma, Not applicable"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: bluetooth_state
+    attributes:
+      label: Bluetooth State at Time of Bug
+      options:
+        - Not applicable
+        - Connected
+        - Disconnected
+        - Scanning
+        - Connecting
+        - Unknown
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of what went wrong
+      placeholder: Describe the unexpected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal steps to reproduce the issue
+      placeholder: |
+        1. Open the app
+        2. Go to Add Device
+        3. Tap Scan
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      placeholder: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      placeholder: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs (optional)
+      description: |
+        `adb logcat -s AutoTypeX1` or any crash stack trace.
+        Remove personal information before pasting.
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I have removed personal information from this report
+          required: true

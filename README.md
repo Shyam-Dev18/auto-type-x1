@@ -4,6 +4,26 @@
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/images/home.png" width="260" alt="Home Dashboard" />
+  &nbsp;&nbsp;
+  <img src="docs/images/typing.png" width="260" alt="Active Typing Session" />
+  &nbsp;&nbsp;
+  <img src="docs/images/add_device.png" width="260" alt="Device Discovery" />
+</p>
+
+<p align="center">
+  <img src="docs/images/scripts.png" width="260" alt="Script Library" />
+  &nbsp;&nbsp;
+  <img src="docs/images/editor.png" width="260" alt="Script Editor" />
+  &nbsp;&nbsp;
+  <img src="docs/images/settings.png" width="260" alt="Engine & Profile Settings" />
+</p>
+
+---
+
 ## Features
 
 - **Bluetooth HID Keyboard Emulation:** Connects as a standard Bluetooth HID keyboard device over Bluetooth Classic — no root required on the phone, no software installation required on the host.
@@ -16,9 +36,32 @@
 
 ---
 
+## Download & Installation
+
+### Option 1: Download Release APK
+
+Download the latest compiled release package directly from GitHub Releases:
+
+📦 **[Download Latest Release APK (v1.0.0)](https://github.com/Shyam-Dev18/auto-type-x1/releases)**
+
+1. Download `AutoTypeX1-v1.0.0.apk` to your Android device.
+2. Open the file and allow installation from unknown sources if prompted.
+3. Launch **AutoType X1** and grant the required Bluetooth permissions.
+
+### Option 2: Build From Source
+
+1. Enable **Developer Options** and **USB Debugging** on your Android device.
+2. Connect your device via USB.
+3. Build and install via Gradle:
+   ```bash
+   ./gradlew installDebug
+   ```
+
+---
+
 ## How It Works
 
-```
+```text
 ┌─────────────────────────┐           Bluetooth Classic HID            ┌─────────────────────────┐
 │     AutoType X1         │ ─────────────────────────────────────────> │        Host OS          │
 │   (Android Device)      │      Keystrokes (USB HID Usage Codes)      │ (Windows/Linux/macOS)   │
@@ -38,21 +81,6 @@
 - **Android Device:** Android 9 (API 28) or higher with Bluetooth Classic support.
 - **Target Host:** Any device that supports Bluetooth HID keyboards (manually verified on Windows 10/11 and Android; expected compatible on Linux and macOS).
 - **Physical Hardware:** Testing must be performed on physical Android hardware. Android emulators do not support Bluetooth HID.
-
----
-
-## Installation
-
-> *Distribution packages will be provided in future releases.*
-
-To install development builds locally from source:
-
-1. Enable **Developer Options** and **USB Debugging** on your Android device.
-2. Connect your device via USB.
-3. Build and install via Gradle:
-   ```bash
-   ./gradlew installDebug
-   ```
 
 ---
 

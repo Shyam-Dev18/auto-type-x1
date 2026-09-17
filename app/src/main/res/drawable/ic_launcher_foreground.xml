@@ -1,0 +1,134 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Keyboard Outer Frame with glowing violet/purple border -->
+    <path
+        android:pathData="M33,62 h42 c2.76,0 5,2.24 5,5 v10 c0,2.76 -2.24,5 -5,5 h-42 c-2.76,0 -5,-2.24 -5,-5 v-10 c0,-2.76 2.24,-5 5,-5 z"
+        android:fillColor="#E60E1524"
+        android:strokeWidth="2">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="28"
+                android:startY="62"
+                android:endX="80"
+                android:endY="82"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF00F0"/>
+                <item android:offset="1.0" android:color="#7F00FF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Keycaps inside the keyboard -->
+    <!-- Keycap 1 (Inactive, translucent white) -->
+    <path
+        android:pathData="M33,66 h8 a2,2 0 0 1 2,2 v1 a2,2 0 0 1 -2,2 h-8 a2,2 0 0 1 -2,-2 v-1 a2,2 0 0 1 2,-2 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="31"
+                android:startY="66"
+                android:endX="43"
+                android:endY="71"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#33FFFFFF"/>
+                <item android:offset="1.0" android:color="#0FFFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Keycap 2 (Active/Connected, glowing cyan) -->
+    <path
+        android:pathData="M50,66 h8 a2,2 0 0 1 2,2 v1 a2,2 0 0 1 -2,2 h-8 a2,2 0 0 1 -2,-2 v-1 a2,2 0 0 1 2,-2 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="48"
+                android:startY="66"
+                android:endX="60"
+                android:endY="71"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#E600F0FF"/>
+                <item android:offset="1.0" android:color="#4D0077FF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Keycap 3 (Inactive, translucent white) -->
+    <path
+        android:pathData="M67,66 h8 a2,2 0 0 1 2,2 v1 a2,2 0 0 1 -2,2 h-8 a2,2 0 0 1 -2,-2 v-1 a2,2 0 0 1 2,-2 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="65"
+                android:startY="66"
+                android:endX="77"
+                android:endY="71"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#33FFFFFF"/>
+                <item android:offset="1.0" android:color="#0FFFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Spacebar (Translucent white) -->
+    <path
+        android:pathData="M38,74 h32 a2,2 0 0 1 2,2 v1 a2,2 0 0 1 -2,2 h-32 a2,2 0 0 1 -2,-2 v-1 a2,2 0 0 1 2,-2 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="36"
+                android:startY="74"
+                android:endX="72"
+                android:endY="79"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#3AFFFFFF"/>
+                <item android:offset="1.0" android:color="#12FFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing underlay for Bluetooth Symbol -->
+    <path
+        android:pathData="M42,34 L66,58 L54,70 L54,22 L66,34 L42,58"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="42"
+                android:startY="22"
+                android:endX="66"
+                android:endY="70"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#4D00F0FF"/>
+                <item android:offset="1.0" android:color="#1A0077FF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Sharp Bluetooth Symbol on top -->
+    <path
+        android:pathData="M42,34 L66,58 L54,70 L54,22 L66,34 L42,58"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="42"
+                android:startY="22"
+                android:endX="66"
+                android:endY="70"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00F0FF"/>
+                <item android:offset="1.0" android:color="#0077FF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing wireless indicator dot above -->
+    <path
+        android:pathData="M54,12a2,2 0,1 1,0 4a2,2 0,1 1,0 -4"
+        android:fillColor="#00F0FF" />
+
+</vector>

@@ -1,0 +1,10 @@
+Initial release of AutoType X1.
+
+• Bluetooth HID keyboard emulation over Bluetooth Classic (API 28+)
+• Human-like typing profiles: Natural, Casual, Professional, Speed Demon
+• QWERTY adjacency-based realistic typo simulation and self-correction
+• Script management: create, edit, delete, and select typing scripts
+• Foreground typing service with persistent notification
+• Device discovery and saved device reconnection
+• Material 3 UI with light/dark mode support
+• Fully offline — no internet, no telemetry, no analytics

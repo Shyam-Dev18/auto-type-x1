@@ -1,0 +1,51 @@
+Categories:
+  - Connectivity
+  - System
+
+License: MIT
+AuthorName: Shyam Darshanam
+AuthorWebSite: https://github.com/Shyam-Dev18
+SourceCode: https://github.com/Shyam-Dev18/auto-type-x1
+IssueTracker: https://github.com/Shyam-Dev18/auto-type-x1/issues
+Changelog: https://github.com/Shyam-Dev18/auto-type-x1/blob/main/CHANGELOG.md
+
+AutoName: Auto Type X1
+
+Summary: Bluetooth HID keyboard emulator with human-like typing profiles
+
+Description: |
+  AutoType X1 turns your Android device into a physical Bluetooth keyboard
+  that types into any paired computer — Windows, Linux, or macOS — with
+  configurable human-like timing.
+
+  Features:
+  * Bluetooth Classic HID keyboard emulation (no root required)
+  * Human-like typing profiles: Natural, Casual, Professional, Speed Demon
+  * Multiline script support with Enter key transmission
+  * Full US QWERTY layout
+  * Background typing via foreground service
+  * Save multiple named scripts for reuse
+  * Material 3 UI with light, dark, and system theme
+  * Fully offline — no internet, no accounts, no tracking
+
+RepoType: git
+Repo: https://github.com/Shyam-Dev18/auto-type-x1.git
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 2
+    commit: FILL_AFTER_PUSH_WITH_FULL_COMMIT_HASH
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+    gradle:
+      - yes
+    binary: https://github.com/Shyam-Dev18/auto-type-x1/releases/download/v1.1.0/AutoTypeX1-v1.1.0.apk
+
+AllowedAPKSigningKeys: 9039bb4e62a1579dab5fc19f59e7ecfbed201cfb03a6acc32933ae93dbae74a4
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.1.0
+CurrentVersionCode: 2

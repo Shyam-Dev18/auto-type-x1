@@ -1,0 +1,33 @@
+AutoType X1 turns your Android device into a physical Bluetooth keyboard that types into any paired computer — Windows, Linux, or macOS — with configurable human-like timing.
+
+HOW IT WORKS
+Connect your phone to a computer over Bluetooth. AutoType X1 registers as a Bluetooth HID keyboard device. Create typing scripts in the app, select a profile, and start typing. The text is transmitted directly as hardware keystrokes — exactly as if you typed it physically.
+
+HUMAN-LIKE TYPING PROFILES
+AutoType X1 includes four built-in typing profiles to simulate natural human input:
+
+• Natural — Balanced speed with subtle jitter and occasional realistic typos
+• Casual — Relaxed typing with natural imperfections
+• Professional — Consistent and efficient with minimal errors
+• Speed Demon — Fast and accurate, minimal hesitation
+
+Each profile controls words-per-minute, timing variation, and typo probability with self-correction behavior.
+
+KEY FEATURES
+• Bluetooth Classic HID keyboard emulation (no root required)
+• Supports Windows, Linux, macOS, and Android as host targets
+• Multiline script support with Enter key transmission
+• Full US QWERTY layout: a–z, A–Z, 0–9, symbols, and punctuation
+• Background typing via foreground service — screen can be locked
+• Save multiple named scripts for reuse
+• Reconnect to previously paired devices
+• Material 3 UI with light, dark, and system theme support
+• Fully offline — no internet, no accounts, no tracking
+
+PRIVACY
+AutoType X1 collects no data. Scripts are stored only on your device. No telemetry, no analytics, no cloud sync. The app cannot communicate with the internet — it holds no INTERNET permission.
+
+REQUIREMENTS
+• Android 9 (API 28) or higher
+• Bluetooth Classic support (all standard Android phones)
+• The target computer must accept Bluetooth HID connections

@@ -1,0 +1,10 @@
+v1.1.0 — Major update with architecture and UX improvements.
+
+• Single Source of Truth architecture for typing state
+• Dedicated TypingActionReceiver for background notification actions
+• Custom neon glowing Bluetooth Keyboard launcher icons
+• Version-aware notification throttling
+• Dynamic BuildConfig.VERSION_NAME in About screen
+• Polished Splash Screen tagline: "Offline, Zero Data & Ads"
+• Corrected ProGuard/R8 rules for production builds
+• Fixed package declaration issues in MainActivity and AutoTypeApp
